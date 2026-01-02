@@ -16,7 +16,7 @@ int main() {
     player = playerChoice();
     computer = ComputerChoice();
     choosewinner(player, computer);
-
+    // elias ist ziemlich gay
     return 0;
 }
 

@@ -8,3 +8,5 @@ crtl + a = am ende der zeile inserten
 
 v = visual mode
 (in visual mode) a um optionen zu sehen fürs hghlighting
+
+crtl + c = insert mode verlassen (manchmal schneller)

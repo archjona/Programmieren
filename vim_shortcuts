@@ -1,0 +1,10 @@
+w - wort nach vorne springen
+
+b - wort nach hinten springen
+
+caw - wort löschen
+
+crtl + a = am ende der zeile inserten
+
+v = visual mode
+(in visual mode) a um optionen zu sehen fürs hghlighting

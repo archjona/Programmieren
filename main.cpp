@@ -73,3 +73,4 @@ void choosewinner(char player, char computer) {
         std::cout << "Gewonnen!\n";
     }
 }
+// Dimo war hier

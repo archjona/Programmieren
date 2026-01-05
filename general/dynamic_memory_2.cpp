@@ -6,7 +6,7 @@
 //
 //                  Useful when we don't know how much memory we will need.
 //                  Makes our programs more flexible, especially when accepting user input
- 
+
 int main () {
 
   char *pGrades = NULL;

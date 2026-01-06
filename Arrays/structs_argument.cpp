@@ -1,7 +1,6 @@
 #include <iostream>
 
 
-
 struct Car{
 
     std::string model;
@@ -9,7 +8,8 @@ struct Car{
     std::string color;
 };
 
-void printCar(Car car);
+void printCar(Car &car);
+void paintCar (Car &car, std::string color);
 
 int main () {
     Car car1;
@@ -23,15 +23,20 @@ int main () {
     car2.year = 2012;
     car2.color = "Black";
 
-    std::cout << &car1 << '\n';
+    paintCar(car1, "silver");
+    paintCar(car2, "gold");
     printCar(car1); // pass by value wenn ein struct in eine funktion kommt
-
+    printCar(car2);
     return 0;
 }
-void printCar (Car car) { // struct fungiert als datentyp
+void printCar (Car &car) { // struct fungiert als datentyp
 
     std::cout << &car<< '\n';
-    std::cout << car.model << '\n'; // wegen pass by value sind diese outputs nur coopies der member, nicht die echten
+    std::cout << car.model << '\n'; // wegen pass by value sind diese outputs nur copies der member, nicht die echten
     std::cout << car.year << '\n';
     std::cout << car.color << '\n';
+}
+void paintCar (Car &car, std::string color){ // Hier muss die Adresse benutzt werden, sonst werden die copies der structs verändert, nicht die originale
+
+    car.color = color;
 }

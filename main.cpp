@@ -39,7 +39,7 @@ char playerChoice() {
             return playerChoice();
     }
 }
-
+//heyyyy
 char ComputerChoice() {
     const char choices[] = { 'r', 'p', 's' };
     const char* names[] = { "ROCK", "PAPER", "SCISSORS" };

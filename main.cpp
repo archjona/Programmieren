@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-//Hey Jonny
+//Hey Jonny naaaaaaaaa
 char playerChoice();
 char ComputerChoice();
 void choosewinner(char player, char computer);

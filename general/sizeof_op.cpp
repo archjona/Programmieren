@@ -1,5 +1,5 @@
 #include <iostream>
-
+// Na wie geht es freunde ich teste hier bisschen git^
 // sizeof() = gibt die größe in bytes an von a:
 //              variablen, data types, class, objects, etc.
 

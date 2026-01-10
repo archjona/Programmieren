@@ -5,7 +5,7 @@ char playerChoice();
 char ComputerChoice();
 void choosewinner(char player, char computer);
 //devvvvv
-
+// hallo na wie gehts
 int main() {
 
     char player;

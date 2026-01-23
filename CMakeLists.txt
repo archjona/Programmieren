@@ -1,15 +1,13 @@
-cmake_minimum_required(VERSION 3.16)
 
+cmake_minimum_required(VERSION 3.16)
 project(moin LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(moin main.cpp
-    Arrays/2D_Array Arrays/2D_Array.cpp Arrays/array_function Arrays/array_function.cpp Arrays/array_input Arrays/array_input.cpp Arrays/array_iteration Arrays/array_iteration.cpp Arrays/array_search Arrays/array_search.cpp Arrays/arrays Arrays/arrays.cpp Arrays/arrays_2 Arrays/arrays_2.cpp Arrays/bubblesort_array Arrays/bubblesort_array.cpp Arrays/fill_function Arrays/fill_function.cpp Arrays/structs Arrays/structs.cpp Arrays/structs_argument Arrays/structs_argument.cpp Funktionen/functions Funktionen/functions.cpp Funktionen/overloaded_functions Funktionen/overloaded_functions.cpp Funktionen/Rekursion Funktionen/Rekursion.cpp Funktionen/Rekursion_2 Funktionen/Rekursion_2.cpp Funktionen/return Funktionen/return_double.cpp Funktionen/return_string Funktionen/return_string.cpp Funktionen/rng Funktionen/rng.cpp Funktionen/templates Funktionen/templates.cpp general/arithmetik general/arithmetik.cpp general/const_parameter general/const_parameter.cpp general/constructor_overload general/constructor_overload.cpp general/constructors general/constructors.cpp general/Datentypen general/Datentypen.cpp general/dynamic_memory general/dynamic_memory.cpp general/dynamic_memory_2 general/dynamic_memory_2.cpp general/enums general/enums.cpp general/hallo general/hallo.cpp general/if general/if.cpp general/Input general/Input.cpp general/Konstanten general/Konstanten.cpp general/logik_ops general/logik_ops.cpp general/Mathe general/Mathe.cpp general/Memory_Adressen general/Memory_Adressen.cpp general/Namespace general/Namespace_1 general/Namespace_1.cpp general/Namespace_2.cpp general/null_pointers general/null_pointers.cpp general/objects general/objects.cpp general/objects_2 general/objects_2.cpp general/passvalue_vs_passreference general/passvalue_vs_passreference.cpp general/pointers general/pointers.cpp general/Schneller general/Schneller.cpp general/sizeof_op general/sizeof_op.cpp general/switch general/switch.cpp general/switch_2 general/switch_2.cpp general/ternary_op general/ternary_op.cpp general/ternary_op2 general/ternary_op2.cpp general/type_conversion general/type_conversion.cpp general/typedef general/typedef.cpp general/variable_scope general/variable_scope.cpp general/Variablen general/Variablen.cpp loops/break_continue loops/break_continue.cpp loops/do_while_loop loops/do_while_loop.cpp loops/for_loops loops/for_loops.cpp loops/foreach_loops loops/foreach_loops.cpp loops/nested_loop loops/nested_loop.cpp loops/while_loops loops/while_loops.cpp loops/while_loops2 loops/while_loops2.cpp Projekte/banking_practice Projekte/banking_practice.cpp Projekte/credit_card_validator Projekte/credit_card_validator.cpp Projekte/hypotenuse Projekte/hypotenuse.cpp Projekte/number_guessing_game Projekte/number_guessing_game.cpp Projekte/Quiz_Game Projekte/Quiz_Game.cpp Projekte/random_event_generator Projekte/random_event_generator.cpp Projekte/schere_stein_papier Projekte/schere_stein_papier.cpp Projekte/taschenrechner Projekte/taschenrechner.cpp Projekte/tic_tac_toe Projekte/tic_tac_toe.cpp stringtrickss/stringtricks stringtrickss/stringtricks_1 stringtrickss/stringtricks_1.cpp stringtrickss/stringtricks_2 stringtrickss/stringtricks_2.cpp stringtrickss/stringtricks_3 stringtrickss/stringtricks_3.cpp stringtrickss/stringtricks_4 stringtrickss/stringtricks_4.cpp stringtrickss/stringtricks_5 stringtrickss/stringtricks_5.cpp stringtrickss/stringtricks_6 stringtrickss/stringtricks_6.cpp stringtrickss/stringtricks_7 stringtrickss/stringtricks_7.cpp stringtrickss/stringtricks_8 stringtrickss/stringtricks_8.cpp Hallo Hallo.cpp hey hey.cpp main main.cpp README.md test test.cpp vim_shortcuts)
-
-include(GNUInstallDirs)
-install(TARGETS moin
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-)
+add_subdirectory(general)
+add_subdirectory(Funktionen)
+add_subdirectory(Arrays)
+add_subdirectory(stringtrickss)
+add_subdirectory(Projekte)
+add_subdirectory(loops)

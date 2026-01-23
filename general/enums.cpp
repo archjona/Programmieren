@@ -13,7 +13,7 @@ enum Day {sunday = 0, monday = 1, tuesday = 2, wednesday = 3, thursday = 4, frid
 int main () {
 
 
-  Day today = sunday;
+  Day today = thursday;
 
   switch(today) {
     case 0: // sunday würde hier z.b auch gehen also namen der elemente 
@@ -48,5 +48,5 @@ int main () {
   }              
   return 0;
 }
-
+//moinsen
 ///he<<<<yyyyyy

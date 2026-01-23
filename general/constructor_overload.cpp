@@ -26,7 +26,7 @@ class Pizza{
 
 int main() {
 
-    Pizza pizza1("pepperoni");
+    Pizza pizza1("pepperon");
     Pizza pizza2("mushrooms", "peppers");
     Pizza pizza3;
     cout << pizza2.topping1 << '\n';

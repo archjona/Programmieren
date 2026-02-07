@@ -26,3 +26,5 @@ void *computation(void* arg) {
 
   return NULL;
 }
+
+//kleiner test ja moinsen

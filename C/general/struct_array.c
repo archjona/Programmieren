@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-struct Car{
+typedef struct Car{
 
    char model[25];
    int year;
    int price;
-};
+}CAR;
 
 
 int main() {
 
-  struct Car cars[] = {{"Audi", 2026, 45000},{"Mercedes", 2023, 35000},{"VW", 2024, 32000}};
+  CAR cars[] = {{"Audi", 2026, 45000},{"Mercedes", 2023, 35000},{"VW", 2024, 32000}};
 
   int number = sizeof(cars)/sizeof(cars[0]);
 
@@ -22,3 +22,4 @@ int main() {
 
   return 0;
 }
+// kleiner est ja

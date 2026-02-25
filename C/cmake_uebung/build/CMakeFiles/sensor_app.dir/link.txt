@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/sensor_app.dir/link.d CMakeFiles/sensor_app.dir/src/main.c.o CMakeFiles/sensor_app.dir/src/sensor.c.o CMakeFiles/sensor_app.dir/src/processing.c.o -o sensor_app
